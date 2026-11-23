@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Big Shoulders Display", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Alex Brush", cursive;
+}
+
+@layer base {
+  html {
+    background-color: #09090b;
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+  }
+}
+
+.portfolio-wordmark {
+  background: linear-gradient(180deg, #dc2626 0%, #991b1b 52%, #240707 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.crimson-card-gradient {
+  background: radial-gradient(circle at 85% 20%, rgba(185, 28, 28, 0.35), transparent 55%),
+    linear-gradient(155deg, #881313 0%, #5c0c0c 58%, #3b0707 100%);
+}
